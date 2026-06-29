@@ -1,0 +1,45 @@
+{
+  "private": false,
+  "name": "jsonresume-theme-consultant-polished-printable",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "description": "Elegant, structured JSON Resume theme optimized for narrative-driven consulting roles in a more printable version",
+  "keywords": [
+    "jsonresume",
+    "theme",
+    "consultant",
+    "elegant",
+    "polished"
+  ],
+  "devDependencies": {
+    "react": "^19.2.0",
+    "styled-components": "^6.1.19",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.21",
+    "@repo/eslint-config-custom": "^0.0.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^6"
+  },
+  "dependencies": {
+    "marked": "^16.3.0",
+    "react-icons": "^5.0.1",
+    "@jsonresume/core": "^0.3.1"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.jsx",
+      "default": "./dist/index.js"
+    },
+    "./dist": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint src || exit 0",
+    "build": "vite build"
+  }
+}
