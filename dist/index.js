@@ -1510,6 +1510,7 @@ const Highlights$2 = Tt.ul`
   margin-top: 0.75rem;
   padding-left: 1.5rem;
   list-style: disc;
+  font-size: 0.625rem;
 
   li {
     margin-bottom: 0.5rem;
@@ -1585,6 +1586,7 @@ const Highlights$1 = Tt.ul`
   margin-top: 0.5rem;
   padding-left: 1.5rem;
   list-style: disc;
+  font-size: 0.625rem;
 
   li {
     margin-bottom: 0.4rem;
@@ -1949,6 +1951,7 @@ const Highlights = Tt.ul`
   margin-top: 0.5rem;
   padding-left: 1.5rem;
   list-style: disc;
+  font-size: 0.625rem;
 
   li {
     margin-bottom: 0.4rem;

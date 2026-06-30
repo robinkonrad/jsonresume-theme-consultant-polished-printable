@@ -48,6 +48,7 @@ const Highlights = styled.ul`
   margin-top: 0.75rem;
   padding-left: 1.5rem;
   list-style: disc;
+  font-size: 0.625rem;
 
   li {
     margin-bottom: 0.5rem;

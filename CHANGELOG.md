@@ -2,9 +2,16 @@
 
 All notable changes to `jsonresume-theme-consultant-polished-printable` will be documented in this file.
 
+## 1.0.3
+
+### Fixed
+
+- Matched work, project, and volunteer highlight bullet list text to the surrounding content size.
+
 ## 1.0.2
 
 ### Fixed
+
 - Styling fix
 
 ## 1.0.1
