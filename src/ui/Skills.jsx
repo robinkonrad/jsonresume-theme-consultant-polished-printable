@@ -8,13 +8,13 @@ const SkillsGrid = styled.div`
 `;
 
 const SkillCategory = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
 const CategoryName = styled.h3`
   font-size: 0.625rem;
   color: #0b1f3a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 `;
 
 const KeywordList = styled.div`

@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import Section from './Section.jsx';
 
 const EducationItem = styled.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 `;
 
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -28,7 +28,7 @@ const DateRange = styled.div`
 const Institution = styled.div`
   font-size: 0.625rem;
   color: #555;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 `;
 
 const Details = styled.div`

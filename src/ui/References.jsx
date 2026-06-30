@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import Section from './Section.jsx';
 
 const ReferenceItem = styled.div`
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
 `;
 
 const Name = styled.h3`
   font-size: 0.625rem;
   color: #0b1f3a;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 `;
 
 const Reference = styled.div`

@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 const SectionContainer = styled.section`
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
 `;
 
 const SectionTitle = styled.h2`
   font-size: 1.125rem;
   color: #0b1f3a;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.625rem;
+  padding-bottom: 0.25rem;
   border-bottom: 1px solid #e0e0e0;
 `;
 

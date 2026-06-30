@@ -1394,19 +1394,19 @@ function renderResumeDocument(element, options = {}) {
   return `<!DOCTYPE html><html lang="${lang}" dir="${dir}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">` + fontLinks + tokensLink + resetTag + head + styleTags + headAfterStyles + titleTag + `</head><body${bodyAttr}>${html}</body></html>`;
 }
 const Header$6 = Tt.header`
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 2px solid #0b1f3a;
 `;
 const Name$3 = Tt.h1`
   font-size: 2.125rem;
   color: #0b1f3a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 `;
 const Label = Tt.p`
   font-size: 0.75rem;
   color: #555;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   font-weight: 400;
 `;
 const ContactInfo = Tt.div`
@@ -1444,13 +1444,13 @@ const Hero = ({ basics }) => {
   ] });
 };
 const SectionContainer = Tt.section`
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
 `;
 const SectionTitle = Tt.h2`
   font-size: 1.125rem;
   color: #0b1f3a;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.625rem;
+  padding-bottom: 0.25rem;
   border-bottom: 1px solid #e0e0e0;
 `;
 const Section = ({ title, children }) => {
@@ -1471,13 +1471,13 @@ const Summary$2 = ({ basics }) => {
   return /* @__PURE__ */ jsx(Section, { title: "Profile", children: /* @__PURE__ */ jsx(SummaryText, { children: basics.summary }) });
 };
 const WorkItem = Tt.div`
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 const WorkHeader = Tt.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -1494,20 +1494,20 @@ const DateRange$3 = Tt.div`
 const Company = Tt.div`
   font-size: 0.625rem;
   color: #555;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.375rem;
 `;
 const Description$2 = Tt.div`
   font-size: 0.625rem;
   line-height: 1.6;
   color: #444;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
 `;
 const Highlights$2 = Tt.ul`
-  margin-top: 0.75rem;
+  margin-top: 0.375rem;
   padding-left: 1.5rem;
   list-style: disc;
   font-size: 0.625rem;
@@ -1548,13 +1548,13 @@ const Work = ({ work }) => {
   ] }, i2)) });
 };
 const ProjectItem = Tt.div`
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.875rem;
 `;
 const Header$5 = Tt.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -1570,20 +1570,20 @@ const DateRange$2 = Tt.div`
 const Entity = Tt.div`
   font-size: 0.575rem;
   color: #555;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 `;
 const Description$1 = Tt.div`
   font-size: 0.625rem;
   line-height: 1.6;
   color: #444;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
 `;
 const Highlights$1 = Tt.ul`
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   padding-left: 1.5rem;
   list-style: disc;
   font-size: 0.625rem;
@@ -1620,13 +1620,13 @@ const Projects = ({ projects }) => {
   ] }, i2)) });
 };
 const EducationItem = Tt.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 `;
 const Header$4 = Tt.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -1642,7 +1642,7 @@ const DateRange$1 = Tt.div`
 const Institution = Tt.div`
   font-size: 0.625rem;
   color: #555;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 `;
 const Details = Tt.div`
   font-size: 0.575rem;
@@ -1681,13 +1681,13 @@ const Education = ({ education }) => {
   ] }, i2)) });
 };
 const CertificateItem = Tt.div`
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
 `;
 const Header$3 = Tt.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -1720,13 +1720,13 @@ const Certificates = ({ certificates }) => {
   ] }, i2)) });
 };
 const PublicationItem = Tt.div`
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
 `;
 const Header$2 = Tt.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -1743,7 +1743,7 @@ const DateText$1 = Tt.div`
 const Publisher = Tt.div`
   font-size: 0.575rem;
   color: #555;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 `;
 const Summary$1 = Tt.div`
   font-size: 0.575rem;
@@ -1767,13 +1767,13 @@ const Publications = ({ publications }) => {
   ] }, i2)) });
 };
 const AwardItem = Tt.div`
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
 `;
 const Header$1 = Tt.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -1789,7 +1789,7 @@ const DateText = Tt.div`
 const Awarder = Tt.div`
   font-size: 0.575rem;
   color: #555;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 `;
 const Summary = Tt.div`
   font-size: 0.575rem;
@@ -1818,12 +1818,12 @@ const SkillsGrid = Tt.div`
   gap: 1.5rem;
 `;
 const SkillCategory = Tt.div`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 const CategoryName = Tt.h3`
   font-size: 0.625rem;
   color: #0b1f3a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 `;
 const KeywordList = Tt.div`
   font-size: 0.575rem;
@@ -1843,12 +1843,12 @@ const InterestList = Tt.div`
   gap: 1rem;
 `;
 const InterestItem = Tt.div`
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.375rem;
 `;
 const InterestName = Tt.h3`
   font-size: 0.625rem;
   color: #0b1f3a;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 `;
 const Keywords = Tt.div`
   font-size: 0.525rem;
@@ -1888,12 +1888,12 @@ const Languages = ({ languages }) => {
   ] }, i2)) }) });
 };
 const ReferenceItem = Tt.div`
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
 `;
 const Name = Tt.h3`
   font-size: 0.625rem;
   color: #0b1f3a;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 `;
 const Reference = Tt.div`
   font-size: 0.575rem;
@@ -1913,13 +1913,13 @@ const References = ({ references }) => {
   ] }, i2)) });
 };
 const VolunteerItem = Tt.div`
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.875rem;
 `;
 const Header = Tt.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -1935,20 +1935,20 @@ const DateRange = Tt.div`
 const Organization = Tt.div`
   font-size: 0.625rem;
   color: #555;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 `;
 const Description = Tt.div`
   font-size: 0.625rem;
   line-height: 1.6;
   color: #444;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
 `;
 const Highlights = Tt.ul`
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   padding-left: 1.5rem;
   list-style: disc;
   font-size: 0.625rem;

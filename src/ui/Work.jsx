@@ -3,14 +3,14 @@ import Section from './Section.jsx';
 import { marked } from 'marked';
 
 const WorkItem = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 
 const WorkHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -30,22 +30,22 @@ const DateRange = styled.div`
 const Company = styled.div`
   font-size: 0.625rem;
   color: #555;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.375rem;
 `;
 
 const Description = styled.div`
   font-size: 0.625rem;
   line-height: 1.6;
   color: #444;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
 `;
 
 const Highlights = styled.ul`
-  margin-top: 0.75rem;
+  margin-top: 0.375rem;
   padding-left: 1.5rem;
   list-style: disc;
   font-size: 0.625rem;

@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 
 const Header = styled.header`
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 2px solid #0b1f3a;
 `;
 
 const Name = styled.h1`
   font-size: 2.125rem;
   color: #0b1f3a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 `;
 
 const Label = styled.p`
   font-size: 0.75rem;
   color: #555;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   font-weight: 400;
 `;
 

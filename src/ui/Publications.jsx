@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import Section from './Section.jsx';
 
 const PublicationItem = styled.div`
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
 `;
 
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 `;
@@ -29,7 +29,7 @@ const DateText = styled.div`
 const Publisher = styled.div`
   font-size: 0.575rem;
   color: #555;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 `;
 
 const Summary = styled.div`

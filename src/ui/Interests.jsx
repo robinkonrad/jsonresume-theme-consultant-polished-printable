@@ -8,13 +8,13 @@ const InterestList = styled.div`
 `;
 
 const InterestItem = styled.div`
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.375rem;
 `;
 
 const InterestName = styled.h3`
   font-size: 0.625rem;
   color: #0b1f3a;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 `;
 
 const Keywords = styled.div`

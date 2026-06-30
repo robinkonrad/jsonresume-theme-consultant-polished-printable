@@ -2,6 +2,12 @@
 
 All notable changes to `jsonresume-theme-consultant-polished-printable` will be documented in this file.
 
+## 1.0.6
+
+### Changed
+
+- Reduced vertical spacing between sections and repeated subsection items by half for a denser print layout.
+
 ## 1.0.5
 
 ### Changed
