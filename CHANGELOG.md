@@ -2,15 +2,21 @@
 
 All notable changes to `jsonresume-theme-consultant-polished-printable` will be documented in this file.
 
+## 1.0.2
+
+### Fixed
+- Styling fix
+
 ## 1.0.1
 
 ### Changed
 
-- Reduced the root font size from `16px` to `10px` so the theme renders more compactly for print and PDF export.
+- Reduced explicit typography sizes by `6px` while preserving the original `16px` root scale for layout spacing and rhythm.
 
 ### Fixed
 
 - Restored styled-components SSR output in the built package by bundling `@jsonresume/core` with the theme.
+- Restored original-theme layout proportions after the printable size adjustment.
 
 ## 1.0.0
 

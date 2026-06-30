@@ -1399,12 +1399,12 @@ const Header$6 = Tt.header`
   border-bottom: 2px solid #0b1f3a;
 `;
 const Name$3 = Tt.h1`
-  font-size: 2.5rem;
+  font-size: 2.125rem;
   color: #0b1f3a;
   margin-bottom: 0.5rem;
 `;
 const Label = Tt.p`
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   color: #555;
   margin-bottom: 1.5rem;
   font-weight: 400;
@@ -1413,7 +1413,7 @@ const ContactInfo = Tt.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #666;
 `;
 const ContactItem = Tt.div`
@@ -1447,7 +1447,7 @@ const SectionContainer = Tt.section`
   margin-bottom: 2.5rem;
 `;
 const SectionTitle = Tt.h2`
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   color: #0b1f3a;
   margin-bottom: 1.25rem;
   padding-bottom: 0.5rem;
@@ -1461,7 +1461,7 @@ const Section = ({ title, children }) => {
   ] });
 };
 const SummaryText = Tt.p`
-  font-size: 1.0625rem;
+  font-size: 0.6875rem;
   line-height: 1.7;
   color: #333;
   margin: 0;
@@ -1482,22 +1482,22 @@ const WorkHeader = Tt.div`
   gap: 0.5rem;
 `;
 const Position$1 = Tt.h3`
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   color: #0b1f3a;
   margin: 0;
 `;
 const DateRange$3 = Tt.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
   font-weight: 400;
 `;
 const Company = Tt.div`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #555;
   margin-bottom: 0.75rem;
 `;
 const Description$2 = Tt.div`
-  font-size: 1rem;
+  font-size: 0.625rem;
   line-height: 1.6;
   color: #444;
   margin-bottom: 0.5rem;
@@ -1558,21 +1558,21 @@ const Header$5 = Tt.div`
   gap: 0.5rem;
 `;
 const ProjectName = Tt.h3`
-  font-size: 1.0625rem;
+  font-size: 0.6875rem;
   color: #0b1f3a;
   margin: 0;
 `;
 const DateRange$2 = Tt.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 const Entity = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #555;
   margin-bottom: 0.5rem;
 `;
 const Description$1 = Tt.div`
-  font-size: 1rem;
+  font-size: 0.625rem;
   line-height: 1.6;
   color: #444;
   margin-bottom: 0.5rem;
@@ -1629,21 +1629,21 @@ const Header$4 = Tt.div`
   gap: 0.5rem;
 `;
 const Degree = Tt.h3`
-  font-size: 1.0625rem;
+  font-size: 0.6875rem;
   color: #0b1f3a;
   margin: 0;
 `;
 const DateRange$1 = Tt.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 const Institution = Tt.div`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #555;
   margin-bottom: 0.5rem;
 `;
 const Details = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #666;
 `;
 const formatDate$4 = (date) => {
@@ -1690,16 +1690,16 @@ const Header$3 = Tt.div`
   gap: 0.5rem;
 `;
 const Name$2 = Tt.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin: 0;
 `;
 const DateText$2 = Tt.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 const Issuer = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #555;
 `;
 const formatDate$3 = (date) => {
@@ -1729,22 +1729,22 @@ const Header$2 = Tt.div`
   gap: 0.5rem;
 `;
 const Name$1 = Tt.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin: 0;
   font-style: italic;
 `;
 const DateText$1 = Tt.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 const Publisher = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #555;
   margin-bottom: 0.25rem;
 `;
 const Summary$1 = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #666;
   line-height: 1.5;
 `;
@@ -1776,21 +1776,21 @@ const Header$1 = Tt.div`
   gap: 0.5rem;
 `;
 const Title = Tt.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin: 0;
 `;
 const DateText = Tt.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 const Awarder = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #555;
   margin-bottom: 0.25rem;
 `;
 const Summary = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #666;
   line-height: 1.5;
 `;
@@ -1819,12 +1819,12 @@ const SkillCategory = Tt.div`
   margin-bottom: 1rem;
 `;
 const CategoryName = Tt.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin-bottom: 0.5rem;
 `;
 const KeywordList = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #555;
   line-height: 1.5;
 `;
@@ -1844,12 +1844,12 @@ const InterestItem = Tt.div`
   margin-bottom: 0.75rem;
 `;
 const InterestName = Tt.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin-bottom: 0.25rem;
 `;
 const Keywords = Tt.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
   line-height: 1.5;
 `;
@@ -1871,11 +1871,11 @@ const LanguageItem = Tt.div`
   align-items: baseline;
 `;
 const LanguageName = Tt.span`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #333;
 `;
 const Fluency = Tt.span`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 const Languages = ({ languages }) => {
@@ -1889,12 +1889,12 @@ const ReferenceItem = Tt.div`
   margin-bottom: 1.25rem;
 `;
 const Name = Tt.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin-bottom: 0.25rem;
 `;
 const Reference = Tt.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #666;
   line-height: 1.5;
   font-style: italic;
@@ -1922,21 +1922,21 @@ const Header = Tt.div`
   gap: 0.5rem;
 `;
 const Position = Tt.h3`
-  font-size: 1.0625rem;
+  font-size: 0.6875rem;
   color: #0b1f3a;
   margin: 0;
 `;
 const DateRange = Tt.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 const Organization = Tt.div`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #555;
   margin-bottom: 0.5rem;
 `;
 const Description = Tt.div`
-  font-size: 1rem;
+  font-size: 0.625rem;
   line-height: 1.6;
   color: #444;
   margin-bottom: 0.5rem;
@@ -2014,7 +2014,7 @@ const render = (resume) => {
     html {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
       background: #fff;
-      font-size: 10px;
+      font-size: 16px;
       line-height: 1.6;
       color: #1a1a1a;
     }
@@ -2033,25 +2033,25 @@ const render = (resume) => {
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.125rem;
       margin-bottom: 0.5rem;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       margin-bottom: 1rem;
       letter-spacing: 0.01em;
     }
 
     h3 {
-      font-size: 1.125rem;
+      font-size: 0.75rem;
       margin-bottom: 0.5rem;
     }
 
     p {
       padding: 0;
       margin: 0 0 0.75rem 0;
-      font-size: 1rem;
+      font-size: 0.625rem;
     }
 
     a {

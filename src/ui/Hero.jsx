@@ -7,13 +7,13 @@ const Header = styled.header`
 `;
 
 const Name = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.125rem;
   color: #0b1f3a;
   margin-bottom: 0.5rem;
 `;
 
 const Label = styled.p`
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   color: #555;
   margin-bottom: 1.5rem;
   font-weight: 400;
@@ -23,7 +23,7 @@ const ContactInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #666;
 `;
 

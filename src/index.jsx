@@ -7,7 +7,7 @@ export const render = (resume) => {
     html {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
       background: #fff;
-      font-size: 10px;
+      font-size: 16px;
       line-height: 1.6;
       color: #1a1a1a;
     }
@@ -26,25 +26,25 @@ export const render = (resume) => {
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.125rem;
       margin-bottom: 0.5rem;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       margin-bottom: 1rem;
       letter-spacing: 0.01em;
     }
 
     h3 {
-      font-size: 1.125rem;
+      font-size: 0.75rem;
       margin-bottom: 0.5rem;
     }
 
     p {
       padding: 0;
       margin: 0 0 0.75rem 0;
-      font-size: 1rem;
+      font-size: 0.625rem;
     }
 
     a {

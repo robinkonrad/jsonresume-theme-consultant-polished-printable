@@ -15,25 +15,25 @@ const Header = styled.div`
 `;
 
 const Name = styled.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin: 0;
   font-style: italic;
 `;
 
 const DateText = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 
 const Publisher = styled.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #555;
   margin-bottom: 0.25rem;
 `;
 
 const Summary = styled.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #666;
   line-height: 1.5;
 `;

@@ -16,24 +16,24 @@ const Header = styled.div`
 `;
 
 const ProjectName = styled.h3`
-  font-size: 1.0625rem;
+  font-size: 0.6875rem;
   color: #0b1f3a;
   margin: 0;
 `;
 
 const DateRange = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 
 const Entity = styled.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #555;
   margin-bottom: 0.5rem;
 `;
 
 const Description = styled.div`
-  font-size: 1rem;
+  font-size: 0.625rem;
   line-height: 1.6;
   color: #444;
   margin-bottom: 0.5rem;

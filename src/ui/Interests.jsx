@@ -12,13 +12,13 @@ const InterestItem = styled.div`
 `;
 
 const InterestName = styled.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin-bottom: 0.25rem;
 `;
 
 const Keywords = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
   line-height: 1.5;
 `;

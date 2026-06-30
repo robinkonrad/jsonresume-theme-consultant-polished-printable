@@ -12,13 +12,13 @@ const SkillCategory = styled.div`
 `;
 
 const CategoryName = styled.h3`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #0b1f3a;
   margin-bottom: 0.5rem;
 `;
 
 const KeywordList = styled.div`
-  font-size: 0.95rem;
+  font-size: 0.575rem;
   color: #555;
   line-height: 1.5;
 `;

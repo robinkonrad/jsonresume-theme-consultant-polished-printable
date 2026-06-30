@@ -14,12 +14,12 @@ const LanguageItem = styled.div`
 `;
 
 const LanguageName = styled.span`
-  font-size: 1rem;
+  font-size: 0.625rem;
   color: #333;
 `;
 
 const Fluency = styled.span`
-  font-size: 0.9rem;
+  font-size: 0.525rem;
   color: #666;
 `;
 

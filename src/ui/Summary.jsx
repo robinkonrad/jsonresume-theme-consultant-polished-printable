@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Section from './Section.jsx';
 
 const SummaryText = styled.p`
-  font-size: 1.0625rem;
+  font-size: 0.6875rem;
   line-height: 1.7;
   color: #333;
   margin: 0;

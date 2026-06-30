@@ -5,7 +5,7 @@ const SectionContainer = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   color: #0b1f3a;
   margin-bottom: 1.25rem;
   padding-bottom: 0.5rem;
