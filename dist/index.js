@@ -1513,7 +1513,7 @@ const Highlights$2 = Tt.ul`
   font-size: 0.625rem;
 
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     line-height: 1.6;
     color: #444;
   }
@@ -1589,7 +1589,7 @@ const Highlights$1 = Tt.ul`
   font-size: 0.625rem;
 
   li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.25rem;
     line-height: 1.6;
     color: #444;
   }
@@ -1954,7 +1954,7 @@ const Highlights = Tt.ul`
   font-size: 0.625rem;
 
   li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.25rem;
     line-height: 1.6;
     color: #444;
   }

@@ -2,6 +2,12 @@
 
 All notable changes to `jsonresume-theme-consultant-polished-printable` will be documented in this file.
 
+## 1.0.4
+
+### Changed
+
+- Reduced spacing between work, project, and volunteer highlight bullet points for a tighter print layout.
+
 ## 1.0.3
 
 ### Fixed

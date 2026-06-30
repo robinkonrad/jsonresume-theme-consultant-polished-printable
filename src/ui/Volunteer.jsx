@@ -50,7 +50,7 @@ const Highlights = styled.ul`
   font-size: 0.625rem;
 
   li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.25rem;
     line-height: 1.6;
     color: #444;
   }
