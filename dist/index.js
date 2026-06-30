@@ -1,5 +1,5 @@
 import { jsxs, jsx } from "react/jsx-runtime";
-import { renderResumeDocument } from "@jsonresume/core/ssr";
+import { renderToStaticMarkup } from "react-dom/server";
 import memoize from "@emotion/memoize";
 import t, { createElement } from "react";
 import { marked } from "marked";
@@ -659,7 +659,7 @@ function ae(e, t2) {
   return e && t2 ? e + " " + t2 : e || t2 || "";
 }
 function ue(e, t2) {
-  return e.join("");
+  return e.join(t2 || "");
 }
 function de(e) {
   let t2 = "";
@@ -1095,13 +1095,31 @@ function nt({ options: e = $, plugins: t2 = x } = $) {
 }
 var ot, st, rt;
 const it = new je(), lt = nt();
-let at = null;
+let ct, at = null, ut = lt;
 const dt = p && null !== (rt = null === (st = (ot = t).cache) || void 0 === st ? void 0 : st.call(ot, () => {
   it.names.clear(), it.keyframeIds.clear(), it.clearTag(), at = null;
 })) && void 0 !== rt ? rt : null, ht = { shouldForwardProp: void 0, styleSheet: it, stylis: lt, stylisPlugins: void 0 }, pt = p ? { Provider: ({ children: e }) => e, Consumer: ({ children: e }) => e(ht) } : t.createContext(ht);
 pt.Consumer;
 function mt() {
   return p ? (dt && dt(), at || ht) : t.useContext(pt);
+}
+function gt(e) {
+  var n, o, s;
+  if (p) {
+    dt && dt();
+    const t2 = at || ht, s2 = void 0 !== e.stylisPlugins || void 0 !== e.namespace || void 0 !== e.enableVendorPrefixes;
+    s2 && (e.stylisPlugins && e.stylisPlugins !== ct ? (ct = e.stylisPlugins, ut = nt({ options: { namespace: e.namespace, prefix: e.enableVendorPrefixes }, plugins: e.stylisPlugins })) : void 0 === e.namespace && void 0 === e.enableVendorPrefixes || (ut = nt({ options: { namespace: e.namespace, prefix: e.enableVendorPrefixes }, plugins: null !== (n = e.stylisPlugins) && void 0 !== n ? n : t2.stylisPlugins })));
+    const r3 = s2 ? void 0 === e.stylisPlugins || e.stylisPlugins.length ? ut : lt : t2.stylis, i3 = "shouldForwardProp" in e ? e.shouldForwardProp : t2.shouldForwardProp, l3 = null !== (o = e.stylisPlugins) && void 0 !== o ? o : t2.stylisPlugins;
+    return at = r3 !== lt || i3 ? { shouldForwardProp: i3, styleSheet: it, stylis: r3, stylisPlugins: l3 } : null, e.children;
+  }
+  const r2 = mt(), { styleSheet: i2 } = r2, l2 = t.useMemo(() => {
+    let t2 = i2;
+    return e.sheet ? t2 = e.sheet : e.target ? t2 = t2.reconstructWithOptions(void 0 !== e.nonce ? { target: e.target, nonce: e.nonce } : { target: e.target }, false) : void 0 !== e.nonce && (t2 = t2.reconstructWithOptions({ nonce: e.nonce })), e.disableCSSOMInjection && (t2 = t2.reconstructWithOptions({ useCSSOMInjection: false })), t2;
+  }, [e.disableCSSOMInjection, e.nonce, e.sheet, e.target, i2]), c2 = t.useMemo(() => {
+    var t2;
+    return void 0 === e.stylisPlugins && void 0 === e.namespace && void 0 === e.enableVendorPrefixes ? r2.stylis : nt({ options: { namespace: e.namespace, prefix: e.enableVendorPrefixes }, plugins: null !== (t2 = e.stylisPlugins) && void 0 !== t2 ? t2 : r2.stylisPlugins });
+  }, [e.enableVendorPrefixes, e.namespace, e.stylisPlugins, r2.stylis, r2.stylisPlugins]), a2 = "shouldForwardProp" in e ? e.shouldForwardProp : r2.shouldForwardProp, u2 = null !== (s = e.stylisPlugins) && void 0 !== s ? s : r2.stylisPlugins, d2 = t.useMemo(() => ({ shouldForwardProp: a2, styleSheet: l2, stylis: c2, stylisPlugins: u2 }), [a2, l2, c2, u2]);
+  return t.createElement(pt.Provider, { value: d2 }, e.children);
 }
 const yt = p ? { Provider: ({ children: e }) => e, Consumer: ({ children: e }) => e(void 0) } : t.createContext(void 0);
 yt.Consumer;
@@ -1266,9 +1284,115 @@ _t.forEach((e) => {
   Tt[e] = kt(e);
 });
 me(() => /* @__PURE__ */ new Set());
+const Yt = /^\s*<\/[a-z]/i;
+class Ut {
+  constructor({ nonce: e } = {}) {
+    this._emitSheetCSS = () => {
+      const e2 = this.instance.toString();
+      if (!e2) return "";
+      const t2 = this.instance.options.nonce || Ee();
+      return `<style ${ue([t2 && `nonce="${t2}"`, `${l}="true"`, `${a}="${u}"`].filter(Boolean), " ")}>${e2}</style>`;
+    }, this.getStyleTags = () => {
+      if (this.sealed) throw S(2);
+      return this._emitSheetCSS();
+    }, this.getStyleElement = () => {
+      if (this.sealed) throw S(2);
+      const e2 = this.instance.toString();
+      if (!e2) return [];
+      const n = { [l]: "", [a]: u, dangerouslySetInnerHTML: { __html: e2 } }, o = this.instance.options.nonce || Ee();
+      return o && (n.nonce = o), [t.createElement("style", Object.assign({}, n, { key: "sc-0-0" }))];
+    }, this.seal = () => {
+      this.sealed = true;
+    }, this.instance = new je({ isServer: true, nonce: e }), this.sealed = false;
+  }
+  collectStyles(e) {
+    if (this.sealed) throw S(2);
+    return t.createElement(gt, { sheet: this.instance }, e);
+  }
+  interleaveWithNodeStream(e) {
+    if (this.sealed) throw S(2);
+    this.seal();
+    const { Transform: t2 } = require("stream"), { instance: n, _emitSheetCSS: o } = this, s = new t2({ transform: function(e2, t3, s2) {
+      const r2 = e2.toString(), i2 = o();
+      if (n.clearTag(), Yt.test(r2)) {
+        const e3 = r2.indexOf(">") + 1, t4 = r2.slice(0, e3), n2 = r2.slice(e3);
+        this.push(t4 + i2 + n2);
+      } else this.push(i2 + r2);
+      s2();
+    } });
+    if ("on" in e && "function" == typeof e.on && "pipe" in e) {
+      const t3 = e;
+      return t3.on("error", (e2) => {
+        s.emit("error", e2);
+      }), t3.pipe(s);
+    }
+    if ("pipe" in e && "function" == typeof e.pipe) return e.pipe(s);
+    throw new Error("Unsupported stream type");
+  }
+}
 "production" !== process.env.NODE_ENV && "undefined" != typeof navigator && "ReactNative" === navigator.product && console.warn("It looks like you've imported 'styled-components' on React Native.\nPerhaps you're looking to import 'styled-components/native'?\nRead more about this at https://styled-components.com/docs/basics#react-native");
 const Xt = `__sc-${l}__`;
 "production" !== process.env.NODE_ENV && "test" !== process.env.NODE_ENV && "undefined" != typeof window && (window[Xt] || (window[Xt] = 0), 1 === window[Xt] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://styled-components.com/docs/faqs#why-am-i-getting-a-warning-about-several-instances-of-module-on-the-page for more info."), window[Xt] += 1);
+const CSS_RESET = "<style>*,*::before,*::after{box-sizing:border-box}html,body{margin:0;padding:0}body{-webkit-font-smoothing:antialiased}</style>";
+const TOKENS_CSS_HREF = "https://unpkg.com/@jsonresume/core/dist/tokens.css";
+const FONTS_PRECONNECT = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+function isHref(value) {
+  return /^(https?:)?\/\//.test(value) || value.trim().startsWith("<link");
+}
+function familyParam(family) {
+  const [name, ...rest] = String(family).split(":");
+  const encodedName = name.trim().replace(/\s+/g, "+");
+  return rest.length ? `${encodedName}:${rest.join(":")}` : encodedName;
+}
+function googleFontsLinks(families) {
+  if (!Array.isArray(families) || families.length === 0) return "";
+  const passthrough = [];
+  const names = [];
+  for (const entry of families) {
+    if (entry == null || entry === "") continue;
+    if (isHref(entry)) passthrough.push(entry);
+    else names.push(entry);
+  }
+  const links = passthrough.map(
+    (href) => href.trim().startsWith("<link") ? href : `<link href="${href}" rel="stylesheet">`
+  );
+  if (names.length > 0) {
+    const query = names.map(familyParam).join("&family=");
+    links.unshift(
+      `<link href="https://fonts.googleapis.com/css2?family=${query}&display=swap" rel="stylesheet">`
+    );
+  }
+  if (links.length === 0) return "";
+  return FONTS_PRECONNECT + links.join("");
+}
+function renderResumeDocument(element, options = {}) {
+  const {
+    fonts,
+    title,
+    lang = "en",
+    dir = "ltr",
+    reset = false,
+    head = "",
+    headAfterStyles = "",
+    includeTokensCss = true,
+    bodyClass
+  } = options;
+  const sheet = new Ut();
+  let html;
+  let styleTags;
+  try {
+    html = renderToStaticMarkup(sheet.collectStyles(element));
+    styleTags = sheet.getStyleTags();
+  } finally {
+    sheet.seal();
+  }
+  const fontLinks = googleFontsLinks(fonts);
+  const tokensLink = includeTokensCss ? `<link rel="stylesheet" href="${TOKENS_CSS_HREF}">` : "";
+  const resetTag = reset ? CSS_RESET : "";
+  const titleTag = title ? `<title>${title}</title>` : "";
+  const bodyAttr = bodyClass ? ` class="${bodyClass}"` : "";
+  return `<!DOCTYPE html><html lang="${lang}" dir="${dir}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">` + fontLinks + tokensLink + resetTag + head + styleTags + headAfterStyles + titleTag + `</head><body${bodyAttr}>${html}</body></html>`;
+}
 const Header$6 = Tt.header`
   margin-bottom: 3rem;
   padding-bottom: 2rem;
