@@ -1513,8 +1513,8 @@ const Highlights$2 = Tt.ul`
   font-size: 0.625rem;
 
   li {
-    margin-bottom: 0.25rem;
-    line-height: 1.6;
+    margin-bottom: 0.15rem;
+    line-height: 1.35;
     color: #444;
   }
 `;
@@ -1589,8 +1589,8 @@ const Highlights$1 = Tt.ul`
   font-size: 0.625rem;
 
   li {
-    margin-bottom: 0.25rem;
-    line-height: 1.6;
+    margin-bottom: 0.15rem;
+    line-height: 1.35;
     color: #444;
   }
 `;
@@ -1954,8 +1954,8 @@ const Highlights = Tt.ul`
   font-size: 0.625rem;
 
   li {
-    margin-bottom: 0.25rem;
-    line-height: 1.6;
+    margin-bottom: 0.15rem;
+    line-height: 1.35;
     color: #444;
   }
 `;

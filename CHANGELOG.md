@@ -2,6 +2,12 @@
 
 All notable changes to `jsonresume-theme-consultant-polished-printable` will be documented in this file.
 
+## 1.0.5
+
+### Changed
+
+- Tightened highlight bullet list spacing further by reducing list item margin and line height.
+
 ## 1.0.4
 
 ### Changed
