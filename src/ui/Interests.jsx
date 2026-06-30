@@ -9,6 +9,8 @@ const InterestList = styled.div`
 
 const InterestItem = styled.div`
   margin-bottom: 0.375rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 
 const InterestName = styled.h3`

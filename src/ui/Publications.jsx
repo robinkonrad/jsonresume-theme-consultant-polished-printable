@@ -3,6 +3,8 @@ import Section from './Section.jsx';
 
 const PublicationItem = styled.div`
   margin-bottom: 0.625rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 
 const Header = styled.div`

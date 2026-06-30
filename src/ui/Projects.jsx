@@ -4,6 +4,8 @@ import { marked } from 'marked';
 
 const ProjectItem = styled.div`
   margin-bottom: 0.875rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 
 const Header = styled.div`

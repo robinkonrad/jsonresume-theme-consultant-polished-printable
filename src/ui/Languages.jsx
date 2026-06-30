@@ -11,6 +11,8 @@ const LanguageItem = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 
 const LanguageName = styled.span`

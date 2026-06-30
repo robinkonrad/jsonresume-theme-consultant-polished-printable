@@ -10,6 +10,8 @@ const SectionTitle = styled.h2`
   margin-bottom: 0.625rem;
   padding-bottom: 0.25rem;
   border-bottom: 1px solid #e0e0e0;
+  break-after: avoid;
+  page-break-after: avoid;
 `;
 
 const Section = ({ title, children }) => {

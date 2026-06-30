@@ -9,6 +9,8 @@ const SkillsGrid = styled.div`
 
 const SkillCategory = styled.div`
   margin-bottom: 0.5rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 
 const CategoryName = styled.h3`

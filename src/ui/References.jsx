@@ -3,6 +3,8 @@ import Section from './Section.jsx';
 
 const ReferenceItem = styled.div`
   margin-bottom: 0.625rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 
 const Name = styled.h3`

@@ -1452,6 +1452,8 @@ const SectionTitle = Tt.h2`
   margin-bottom: 0.625rem;
   padding-bottom: 0.25rem;
   border-bottom: 1px solid #e0e0e0;
+  break-after: avoid;
+  page-break-after: avoid;
 `;
 const Section = ({ title, children }) => {
   if (!children) return null;
@@ -1472,6 +1474,8 @@ const Summary$2 = ({ basics }) => {
 };
 const WorkItem = Tt.div`
   margin-bottom: 1rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const WorkHeader = Tt.div`
   display: flex;
@@ -1549,6 +1553,8 @@ const Work = ({ work }) => {
 };
 const ProjectItem = Tt.div`
   margin-bottom: 0.875rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const Header$5 = Tt.div`
   display: flex;
@@ -1621,6 +1627,8 @@ const Projects = ({ projects }) => {
 };
 const EducationItem = Tt.div`
   margin-bottom: 0.75rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const Header$4 = Tt.div`
   display: flex;
@@ -1682,6 +1690,8 @@ const Education = ({ education }) => {
 };
 const CertificateItem = Tt.div`
   margin-bottom: 0.625rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const Header$3 = Tt.div`
   display: flex;
@@ -1721,6 +1731,8 @@ const Certificates = ({ certificates }) => {
 };
 const PublicationItem = Tt.div`
   margin-bottom: 0.625rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const Header$2 = Tt.div`
   display: flex;
@@ -1768,6 +1780,8 @@ const Publications = ({ publications }) => {
 };
 const AwardItem = Tt.div`
   margin-bottom: 0.625rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const Header$1 = Tt.div`
   display: flex;
@@ -1819,6 +1833,8 @@ const SkillsGrid = Tt.div`
 `;
 const SkillCategory = Tt.div`
   margin-bottom: 0.5rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const CategoryName = Tt.h3`
   font-size: 0.625rem;
@@ -1844,6 +1860,8 @@ const InterestList = Tt.div`
 `;
 const InterestItem = Tt.div`
   margin-bottom: 0.375rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const InterestName = Tt.h3`
   font-size: 0.625rem;
@@ -1871,6 +1889,8 @@ const LanguageItem = Tt.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const LanguageName = Tt.span`
   font-size: 0.625rem;
@@ -1889,6 +1909,8 @@ const Languages = ({ languages }) => {
 };
 const ReferenceItem = Tt.div`
   margin-bottom: 0.625rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const Name = Tt.h3`
   font-size: 0.625rem;
@@ -1914,6 +1936,8 @@ const References = ({ references }) => {
 };
 const VolunteerItem = Tt.div`
   margin-bottom: 0.875rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 const Header = Tt.div`
   display: flex;

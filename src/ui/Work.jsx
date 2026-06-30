@@ -4,6 +4,8 @@ import { marked } from 'marked';
 
 const WorkItem = styled.div`
   margin-bottom: 1rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
 `;
 
 const WorkHeader = styled.div`

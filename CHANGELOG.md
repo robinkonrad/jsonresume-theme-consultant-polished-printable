@@ -2,6 +2,12 @@
 
 All notable changes to `jsonresume-theme-consultant-polished-printable` will be documented in this file.
 
+## 1.0.7
+
+### Fixed
+
+- Added print pagination rules so repeated subsection blocks avoid splitting across pages.
+
 ## 1.0.6
 
 ### Changed
